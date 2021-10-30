@@ -1,0 +1,17 @@
+class Solution:
+    def rotate(self, matrix: List[List[int]]) -> None:
+        """
+        Do not return anything, modify matrix in-place instead.
+        """
+        ####Swap rows####
+        rows=len(matrix[0])-1
+        for i in range(0,(rows//2)+1):
+            matrix[i],matrix[rows-i]=matrix[rows-i],matrix[i]
+        
+        ####Transpose####
+        k=1
+        #count=0
+        for i in range(0,rows):
+            for j in range(k,len(matrix[0])):
+                matrix[i][j],matrix[j][i]=matrix[j][i],matrix[i][j]
+            k+=1    
