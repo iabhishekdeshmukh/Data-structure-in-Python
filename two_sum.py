@@ -3,7 +3,7 @@ Type "help", "copyright", "credits" or "license()" for more information.
 >>> class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         nums_2=[]
-        num1=3
+        num1=3.3
         hello=0, hello1=9
         for i in range(0,len(nums)):
             nums_2.append(target-nums[i])
